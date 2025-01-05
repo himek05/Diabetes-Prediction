@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Diabetes</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+    <header>
+        <p class="btn"><button onclick="window.location.href='{% url 'home' %}'">back</button></p>
+    </header>
+    <section>
+        <h2>What is Diabetes?</h2>
+        <p>Diabetes is a chronic health condition that occurs when the body cannot effectively regulate blood sugar
+            (glucose) levels. Glucose is the primary source of energy for the body's cells, and its regulation is
+            managed by a hormone called <strong>insulin</strong>, which is produced by the pancreas.</p>
+
+        <h2>Types of Diabetes</h2>
+        <h3>1. Type 1 Diabetes</h3>
+        <ul>
+            <li><strong>Cause:</strong> Autoimmune reaction where the immune system attacks insulin-producing cells in
+                the pancreas.</li>
+            <li><strong>Who It Affects:</strong> Often diagnosed in children or young adults, but can occur at any age.
+            </li>
+            <li><strong>Management:</strong> Requires daily insulin injections or the use of an insulin pump.</li>
+        </ul>
+        <h3>2. Type 2 Diabetes</h3>
+        <ul>
+            <li><strong>Cause:</strong> The body becomes resistant to insulin, or the pancreas does not produce enough
+                insulin.</li>
+            <li><strong>Who It Affects:</strong> More common in adults but increasingly diagnosed in children and teens
+                due to obesity.</li>
+            <li><strong>Management:</strong> Lifestyle changes (diet, exercise), medications, and sometimes insulin.
+            </li>
+        </ul>
+        <h3>3. Gestational Diabetes</h3>
+        <ul>
+            <li><strong>Cause:</strong> High blood sugar levels during pregnancy due to hormonal changes.</li>
+            <li><strong>Who It Affects:</strong> Pregnant women; usually resolves after childbirth, but increases the
+                risk of developing Type 2 diabetes later.</li>
+            <li><strong>Management:</strong> Monitoring blood sugar, healthy diet, and exercise; sometimes insulin or
+                medication.</li>
+        </ul>
+        <h3>4. Prediabetes</h3>
+        <ul>
+            <li><strong>Cause:</strong> Blood sugar levels are higher than normal but not yet high enough for a Type 2
+                diabetes diagnosis.</li>
+            <li><strong>Management:</strong> Lifestyle changes to prevent progression to Type 2 diabetes.</li>
+        </ul>
+
+        <h2>Symptoms of Diabetes</h2>
+        <ul>
+            <li>Increased thirst and hunger</li>
+            <li>Frequent urination</li>
+            <li>Unexplained weight loss</li>
+            <li>Fatigue</li>
+            <li>Blurred vision</li>
+            <li>Slow-healing wounds</li>
+            <li>Frequent infections</li>
+        </ul>
+        <p><em>In severe cases, untreated diabetes can lead to diabetic ketoacidosis (Type 1) or hyperosmolar
+                hyperglycemic state (Type 2), both of which require immediate medical attention.</em></p>
+
+        <h2>Risk Factors</h2>
+        <ul>
+            <li><strong>Type 1:</strong> Family history, genetics, autoimmune conditions.</li>
+            <li><strong>Type 2:</strong> Overweight or obesity, sedentary lifestyle, family history, age (45+),
+                ethnicity (higher risk in African American, Hispanic, Native American, and Asian populations), high
+                blood pressure.</li>
+            <li><strong>Gestational:</strong> Overweight, previous gestational diabetes, family history of Type 2
+                diabetes.</li>
+        </ul>
+
+        <h2>Complications</h2>
+        <p>If not managed properly, diabetes can lead to:</p>
+        <ul>
+            <li>Heart disease</li>
+            <li>Stroke</li>
+            <li>Kidney damage (diabetic nephropathy)</li>
+            <li>Eye damage (diabetic retinopathy)</li>
+            <li>Nerve damage (diabetic neuropathy)</li>
+            <li>Foot problems (ulcers, infections)</li>
+        </ul>
+
+        <h2>Management and Prevention</h2>
+        <h3>1. Lifestyle Changes</h3>
+        <ul>
+            <li>Healthy, balanced diet with controlled carbohydrate intake.</li>
+            <li>Regular physical activity.</li>
+            <li>Weight management.</li>
+        </ul>
+        <h3>2. Medications</h3>
+        <ul>
+            <li>Insulin therapy for Type 1 and sometimes Type 2 diabetes.</li>
+            <li>Oral medications like Metformin for Type 2 diabetes.</li>
+        </ul>
+        <h3>3. Regular Monitoring</h3>
+        <ul>
+            <li>Blood sugar levels using a glucose meter.</li>
+            <li>Regular check-ups with a healthcare provider to monitor A1C levels, cholesterol, and blood pressure.
+            </li>
+        </ul>
+        <h3>4. Prevention</h3>
+        <ul>
+            <li>Stay active and maintain a healthy weight.</li>
+            <li>Avoid smoking and excessive alcohol.</li>
+            <li>Eat a diet rich in fruits, vegetables, lean proteins, and whole grains.</li>
+        </ul>
+
+        <p>Diabetes is a manageable condition with the right care and lifestyle adjustments. If you suspect you or
+            someone else has symptoms of diabetes, consult a healthcare professional for diagnosis and treatment.</p>
+    </section>
+</body>
+
+</html>

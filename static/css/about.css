@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #0073e6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: start;
+    
+}
+
+.btn {
+text-align: start; /* Center-aligns the button within the paragraph */
+margin: 20px 30px; /* Adds some spacing around the button */
+}
+
+.btn button {
+background-color: green; /* Button background color */
+color: white; /* Text color */
+padding: 10px 20px; /* Adds padding inside the button */
+border: none; /* Removes border */
+border-radius: 5px; /* Rounds the corners */
+font-size: 16px; /* Text size */
+cursor: pointer; /* Changes cursor to a pointer on hover */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.btn button:hover {
+background-color: #005bb5; /* Darker blue on hover */
+transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+.btn button:active {
+background-color: #003f7f; /* Even darker blue on click */
+transform: scale(1); /* Resets the size on click */
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    color: #0073e6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

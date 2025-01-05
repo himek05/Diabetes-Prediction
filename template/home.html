@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="ocn">
+        <header>
+            <h1 class="ht">Diabetes Prediction</h1>
+        </header>
+        <div class="container">
+            <div class="right">
+                <h1>Welcome to Diabetes Prediction</h1>
+                <img src="static/images/images.jpg" alt="">
+                <p>Use our tool to predict the likelihood of diabetes based on various health parameters."Diabetes is a chronic condition that affects how your body regulates blood sugar (glucose). With the right care, it can be managed effectively."</p>
+                <p>Example: "Learn more about managing and preventing diabetes."</p>
+                <div class="btn">
+                <button class="btn-l" onclick="window.location.href='{% url 'about' %}'">Documentation</button>
+                <button class="btn-r" onclick="window.location.href='{% url 'predict' %}'">Predict Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
