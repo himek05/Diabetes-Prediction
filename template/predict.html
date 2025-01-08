@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +17,33 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+        }
+
+        .btn {
+            text-align: start;
+            margin: 20px 30px;
+        }
+
+        .btn button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn button:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+
+        .btn button:active {
+            background-color: #003f7f;
+            transform: scale(1);
         }
 
         .form-container {
@@ -64,7 +92,7 @@
         .form-group input::placeholder {
             color: #999;
         }
-            
+
         .btn-submit {
             width: 100%;
             padding: 10px;
@@ -87,10 +115,35 @@
             font-size: 0.8rem;
             color: #aaa;
         }
+
+        .btn-top-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #005bb5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-top-left:hover {
+            background-color: #003f7f;
+            transform: scale(1.05);
+        }
+
+        .btn-top-left:active {
+            background-color: #002a5c;
+            transform: scale(1);
+        }
     </style>
 </head>
 
 <body>
+    <button class="btn-top-left" onclick="window.location.href='{% url 'home' %}'">&lt; Back to Home</button>
     <div class="form-container">
         <h2>Health Metrics Form</h2>
         <form action="{% url 'result' %}" method="post">

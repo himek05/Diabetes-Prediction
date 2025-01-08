@@ -1,10 +1,9 @@
 from django.shortcuts import render
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
+import os
 
 def home(request):
     return render(request, 'home.html') 
@@ -16,9 +15,12 @@ def predict(request):
     return render(request, 'predict.html') 
 
 def result(request):
-    dataset = pd.read_csv(r"C:\Users\himek\Desktop\ML-Project\Dpc\diabetes.csv")
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    file_path = os.path.join(base_dir, 'static', 'data', 'diabetes.csv')
+    
+    dataset = pd.read_csv(file_path)
 
-    x = dataset.drop(columns="Outcome",axis=1)
+    x = dataset.drop(columns="Outcome", axis=1)
     y = dataset["Outcome"]
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=99)
@@ -35,7 +37,7 @@ def result(request):
     val7 = float(request.POST['n7'])
     val8 = float(request.POST['n8'])
 
-    pred = ln.predict([[val1, val2, val3, val4, val5, val6, val7,val8]])
+    pred = ln.predict([[val1, val2, val3, val4, val5, val6, val7, val8]])
 
     result2 = "Positive" if pred == [1] else "Negative"
 
