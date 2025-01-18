@@ -15,7 +15,6 @@ This project is a web application for predicting the likelihood of diabetes base
 - Pandas
 - Scikit-learn
 - HTML/CSS
-- JavaScript
 
 ## Setup Instructions
 
